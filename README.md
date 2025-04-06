@@ -15,11 +15,13 @@ Encoder blocks: 4 downsampling steps with convolution, activation (ELU), and max
 Bottleneck: 2 convolutional layers.
 Decoder blocks: 4 upsampling steps with skip connections.
 Final output: Sigmoid activation for binary segmentation.
+
 ⚙️ Training
 Optimizer: Adam
 Loss: BinaryCrossentropy
 Metrics: Accuracy
 EarlyStopping is used to prevent overfitting.
+
 📊 Evaluation
 Performance is evaluated using:
 Accuracy
@@ -27,6 +29,7 @@ Jaccard Score
 Classification Report
 Model prediction vs. ground truth masks are visualized.
 Training and validation loss/accuracy curves are plotted.
+
 🧪 Results
 Trained model is saved as model1.h5.
 
